@@ -2,6 +2,11 @@ package com.darwinsys.random;
 
 import java.util.random.RandomGenerator;
 
+/**
+ * Please *do not* use this for anything; it produces terribly bad random numbers.
+ * It is just here to show that - IF you write a decent algorithm - the interface
+ * will massage its results to provide the other value types needed to complete the interface.
+ */
 public class CrappyRandom implements RandomGenerator {
 
     /** The attacker has a hard time guessing the exact nanosecond at which this is initialized */
@@ -23,9 +28,6 @@ public class CrappyRandom implements RandomGenerator {
      * Tests will reveal its quality (or lack thereof).
      */
     public long nextLong() {
-
-        lastVal = (a * lastVal + c) % mod;
-		// System.out.println("retval = " + retval);
-        return lastVal;
+        return lastVal = (a * lastVal + c) % mod;
     }
 }
