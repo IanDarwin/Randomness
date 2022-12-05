@@ -1,0 +1,40 @@
+# Here we run "BackCompatTest" with Java 8, Java 11 and Java 17. Same answers each time.
+$ for java in 1.8 11 17; do withjava $java java -cp /tmp com.darwinsys.random.BackCompatTest; done
+Prepending /usr/local/jdk-1.8.0/bin to PATH
+Using JAVA_HOME=/usr/local/jdk-1.8.0 java -cp /tmp com.darwinsys.random.BackCompatTest in /home/ian/git/Randomness
+0.3618031071604718
+0.932993485288541
+0.8330913489710237
+0.32647575623792624
+0.2355237906476252
+0.34911535662488336
+0.4480776326931518
+0.6381529437838686
+0.1582665432952023
+0.768888060192009
+Prepending /usr/local/jdk-11/bin to PATH
+Using JAVA_HOME=/usr/local/jdk-11 java -cp /tmp com.darwinsys.random.BackCompatTest in /home/ian/git/Randomness
+0.3618031071604718
+0.932993485288541
+0.8330913489710237
+0.32647575623792624
+0.2355237906476252
+0.34911535662488336
+0.4480776326931518
+0.6381529437838686
+0.1582665432952023
+0.768888060192009
+Prepending /usr/local/jdk-17/bin to PATH
+Using JAVA_HOME=/usr/local/jdk-17 java -cp /tmp com.darwinsys.random.BackCompatTest in /home/ian/git/Randomness
+0.3618031071604718
+0.932993485288541
+0.8330913489710237
+0.32647575623792624
+0.2355237906476252
+0.34911535662488336
+0.4480776326931518
+0.6381529437838686
+0.1582665432952023
+0.768888060192009
+$ 
+
