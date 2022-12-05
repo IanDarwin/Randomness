@@ -6,4 +6,5 @@ improvements and new algorithms and framework.
 
 The accompanying text
 is expected to be 
-published in Oracle Java Magazine.
+published in 
+https://blogs.oracle.com/javamagazine/[Oracle Java Magazine].
