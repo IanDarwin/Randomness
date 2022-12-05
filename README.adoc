@@ -1,0 +1,9 @@
+= Randomness
+
+This does NOT contain good examples of random number generators,
+but rather demos of using existing ones, focussing on the Java 17
+improvements and new algorithms and framework.
+
+The accompanying text
+is expected to be 
+published in Oracle Java Magazine.
