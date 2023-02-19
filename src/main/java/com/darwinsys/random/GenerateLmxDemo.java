@@ -9,6 +9,7 @@ public class GenerateLmxDemo {
         RandomGenerator genx = RandomGeneratorFactory
                 .of(algorithm)
                 .create();
+		System.out.println(genx.getClass());
         genx
                 .doubles(10)
                 .forEach(System.out::println);
